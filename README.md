@@ -38,7 +38,7 @@ sudo apt update
 sudo apt install libjasper1 libjasper-dev
 ```
 
-#### //Step 3. Download OpenCV Sources using git
+#### Step 3. Download OpenCV Sources using git
 ```sh
 sudo -s
 ```
@@ -52,7 +52,7 @@ git clone https://github.com/Itseez/opencv.git
 git clone https://github.com/Itseez/opencv_contrib.git
 ```
 
-#### //Step 4. Build & Install OpenCV
+#### Step 4. Build & Install OpenCV
 ```sh
 cd opencv
 ```
@@ -82,7 +82,7 @@ exit
 ```sh
 cd ~
 ```
-#### //Step 5. Check OpenCV version installed
+#### Step 5. Check OpenCV version installed
 ```sh
 pkg-config --modversion opencv
 ```
@@ -104,7 +104,7 @@ pkg-config --modversion opencv
 
 ![Screenshot](https://i1.wp.com/techawarey.com/wp-content/uploads/2020/04/OpenCV_final.png?resize=660%2C200)
 
-#### //Step 6. Compile & Run a Test Program 
+#### Step 6. Compile & Run a Test Program 
 ```sh
 mkdir opencv_test
 ```
@@ -114,7 +114,7 @@ cd opencv_test
 ```sh
 gedit test.cpp 
 ```
-#### //Copy & Paste the code psoted in Step 6
+#### Copy & Paste the code psoted in Step 6
 
 ```sh
 g++ test.cpp -o testoutput -std=c++11 `pkg-config --cflags --libs opencv`
