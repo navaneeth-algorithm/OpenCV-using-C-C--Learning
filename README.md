@@ -1,21 +1,22 @@
 ## To Install OpenCV in ubuntu follow this procedure
-//Step 1. Update the Ubuntu System Package
+
+#### //Step 1. Update the Ubuntu System Package
 $ sudo apt-get update && sudo apt-get upgrade
 
-//Step 2. Install Required tools and packages
+#### //Step 2. Install Required tools and packages
 $ sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev
 
 $ sudo apt-get install python3.5-dev python3-numpy libtbb2 libtbb-dev
 
 $ sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libjasper-dev libdc1394-22-dev libeigen3-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev sphinx-common libtbb-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libopenexr-dev libgstreamer-plugins-base1.0-dev libavutil-dev libavfilter-dev libavresample-dev
 
-//Step 3. Download OpenCV Sources using git
+#### //Step 3. Download OpenCV Sources using git
 $ sudo -s
 $ cd /opt
 $ git clone https://github.com/Itseez/opencv.git
 $ git clone https://github.com/Itseez/opencv_contrib.git
 
-//Step 4. Build & Install OpenCV
+#### //Step 4. Build & Install OpenCV
 $ cd opencv
 $ mkdir release
 $ cd release
@@ -26,10 +27,10 @@ $ ldconfig
 $ exit
 $ cd ~
 
-//Step 5. Check OpenCV version installed
+#### //Step 5. Check OpenCV version installed
 $ pkg-config --modversion opencv
 
-//Step 6. Compile & Run a Test Program 
+#### //Step 6. Compile & Run a Test Program 
 $ mkdir opencv_test
 $ cd opencv_test
 $ gedit test.cpp 
@@ -42,14 +43,14 @@ $ ./testoutput
 
 
 
-# To Compile C++ opencv program use command
+#### To Compile C++ opencv program use command
 g++ test.cpp -o testoutput -std=c++11 `pkg-config --cflags --libs opencv`
 
-# To run the program
+#### To run the program
 ./testoutput
 
 
 
-##Link and credit 
+## Link and credit 
 http://techawarey.com/programming/install-opencv-c-c-in-ubuntu-18-04-lts-step-by-step-guide/
 
