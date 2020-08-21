@@ -136,7 +136,7 @@ g++ test.cpp -o testoutput -std=c++11 `pkg-config --cflags --libs opencv`
 ./testoutput
 ```
 
-###Output
+### Output
 ![output](https://i2.wp.com/techawarey.com/wp-content/uploads/2020/04/OpenCV_TestCodeOutput.png?resize=768%2C523)
 
 ## Link and credit 
