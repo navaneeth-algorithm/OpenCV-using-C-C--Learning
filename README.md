@@ -8,7 +8,26 @@ $ sudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavc
 
 $ sudo apt-get install python3.5-dev python3-numpy libtbb2 libtbb-dev
 
+##### If you encounter error like below screenshot, then follow the step 2.a
+(https://i2.wp.com/techawarey.com/wp-content/uploads/2020/04/OpenCV_python_3_5_error.png?resize=660%2C203)
+
+
 $ sudo apt-get install libjpeg-dev libpng-dev libtiff5-dev libjasper-dev libdc1394-22-dev libeigen3-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev sphinx-common libtbb-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libopenexr-dev libgstreamer-plugins-base1.0-dev libavutil-dev libavfilter-dev libavresample-dev
+
+##### if you encounter error like below screenshot, then follow the step 2.b
+(https://i1.wp.com/techawarey.com/wp-content/uploads/2020/04/OpenCV_libjasper_Error.png?resize=660%2C214)
+
+##### Step 2.a Add repository and ppa
+sudo apt-add-repository ppa:deadsnakes/ppa
+
+
+##### Step 2.b Add repository and ppa
+$ sudo apt-add-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+
+$ sudo apt update
+
+$ sudo apt install libjasper1 libjasper-dev
+
 
 #### //Step 3. Download OpenCV Sources using git
 $ sudo -s
@@ -41,6 +60,20 @@ $ cd ~
 
 #### //Step 5. Check OpenCV version installed
 $ pkg-config --modversion opencv
+
+##### If you encounter error like “pakage opencv not found” then follow step 5.a.
+
+##### Step 5.a. Find & Set “opencv.pc” file path
+
+$ apt-file search opencv.pc
+
+$ ls /usr/local/lib/pkgconfig/
+
+$ sudo cp /usr/local/lib/pkgconfig/opencv4.pc  /usr/lib/x86_64-linux-gnu/pkgconfig/opencv.pc
+
+$ pkg-config --modversion opencv 
+
+(https://i1.wp.com/techawarey.com/wp-content/uploads/2020/04/OpenCV_final.png?resize=660%2C200)
 
 #### //Step 6. Compile & Run a Test Program 
 $ mkdir opencv_test
