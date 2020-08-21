@@ -1,6 +1,8 @@
-## To Install OpenCV in ubuntu follow this procedure
+# To Install OpenCV in ubuntu  from source follow this procedure
+#### This is respect to Ubuntu 18.04 & i have not checked in other operating system
 
-#### Step 1. Update the Ubuntu System Package
+#### Step 1. Update the Ubuntu
+ System Package
 ```sh
  sudo apt-get update && sudo apt-get upgrade
 ```
