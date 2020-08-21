@@ -140,6 +140,6 @@ g++ test.cpp -o testoutput -std=c++11 `pkg-config --cflags --libs opencv`
 ![output](https://i2.wp.com/techawarey.com/wp-content/uploads/2020/04/OpenCV_TestCodeOutput.png?resize=768%2C523)
 
 ## Link and credit 
-http://techawarey.com/programming/install-opencv-c-c-in-ubuntu-18-04-lts-step-by-step-guide/
+[Credit](http://techawarey.com/programming/install-opencv-c-c-in-ubuntu-18-04-lts-step-by-step-guide/)
 
-Please like and share Techawarey.  Find and Like Techawarey on Facebook[Techwy facebook](https://www.facebook.com/Techawarey).😊
+Please like and share Techawarey.  Find and Like [Techawarey on Facebook](https://www.facebook.com/Techawarey).😊
